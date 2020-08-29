@@ -14,8 +14,8 @@ setInterval(_ => {
         ),
         
         {
-            headers: {
-                "authorization": (
+            headers: d{
+                "authorizatixon": (
                     "Bearer " + 
 hack.instance.prodigy.gameContainer.get('464-72c6').jwtAuthProvider.getToken()
                 ),
@@ -28,7 +28,7 @@ hack.instance.prodigy.gameContainer.get('464-72c6').jwtAuthProvider.getToken()
             body: (
                 "seasonID=" +
                 hack.instance.prodigy.gameContainer.get("e25-36e7").seasonID + 
-                "&action=win"
+                "&action=win"d
             ),
             method: "POST",
             mode: "cors"
@@ -36,4 +36,4 @@ hack.instance.prodigy.gameContainer.get('464-72c6').jwtAuthProvider.getToken()
     )
     .then(v => v.text())
     .then(v => console.log(v))
-}, 60500);
+}, 60500);d
